@@ -143,16 +143,23 @@ for i in groups:
         #     desc="move focused window to group {}".format(i.name)),
     ])
 
+layout_theme =  {"margin": 10,
+                 "border_width": 2,
+                 "border_focus": "e1acff",
+                 "border_normal": "1d2330"
+                 }
+
 layouts = [
-    layout.Columns(border_focus_stack='#d75f5f', margin=10),
-    layout.Max(margin=10),
+    layout.Bsp(**layout_theme),
+    layout.MonadTall(**layout_theme),
+    layout.Tile(**layout_theme),
+    layout.Columns(border_focus_stack='#d75f5f', **layout_theme),
+    layout.Max(**layout_theme),
+    layout.Floating(**layout_theme)
     # layout.Stack(num_stacks=2),
-    layout.Bsp(margin=10),
     # layout.Matrix(margin=10),
-    layout.MonadTall(margin=10),
     # layout.MonadWide(),
     # layout.RatioTile(),
-    layout.Tile(margin=10),
     # layout.TreeTab(),
     # layout.VerticalTile(),
     # layout.Zoomy(),
@@ -190,7 +197,6 @@ screens = [
             35,
             margin=10,
             opacity=1,
-
         ),
     ),
 ]
