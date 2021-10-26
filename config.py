@@ -194,7 +194,7 @@ screens = [
                 #widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
                 widget.Clock(format='%a %I:%M:%S %p'),
                 widget.CurrentLayout(),
-                widget.QuickExit(),
+                #widget.QuickExit(),
             ],
             35,
             margin=10,
