@@ -13,3 +13,5 @@ Trying out qtile and working on my own config file.  Mostly I'm hunting through 
 10/26/21
 Working on some extra icons and widgets.  Added the network icon and starting it at boot.
 Also added the battery icon and modified the clock so it doesn't take that much space.
+- added xorg-xbacklight (for backlight management)
+- added playerctl package for player control management
